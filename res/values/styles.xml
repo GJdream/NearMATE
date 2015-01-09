@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <style name="BigButton">
+        <item name="android:background">@drawable/white_box</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:padding">@dimen/bigSpace</item>
+    </style>
+</resources>

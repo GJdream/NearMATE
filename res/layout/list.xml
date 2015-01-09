@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@color/white"
+    >
+    <!--  android:background="#fce4ec" -->
+  <!-- android:background="#E0F7FA" -->
+    <!--#E0F7FA  -->
+    
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+         android:background="@color/test_green"
+        android:layout_height="110dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+         />
+    <!-- android:background="#e91e63" -->
+
+    <LinearLayout
+        android:id="@+id/informations_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_imageview"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="28dp"
+         >
+
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dfgfg"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"/>
+        
+        <TextView
+            android:id="@+id/view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_profile"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@android:color/black"
+             />
+
+        
+
+    </LinearLayout>
+
+
+  <!-- cheat code: negative margin -->
+       <com.facebook.widget.ProfilePictureView
+          android:id="@+id/user_image"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        facebook:preset_size="large" 
+        android:background="@null"
+        android:layout_above="@+id/informations_container"
+        android:layout_marginBottom="-30dp"
+        />
+ 
+
+      <!-- <com.loopj.android.image.SmartImageView
+           android:id="@+id/user_image"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+	       android:layout_above="@+id/informations_container"
+           android:layout_marginBottom="-20dp"
+           /> -->
+           
+         <!--  <ImageView
+          android:id="@+id/user_image"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_centerHorizontal="true"
+          android:layout_above="@+id/informations_container"
+          android:layout_marginBottom="-20dp" /> -->
+        
+       
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/menuListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:divider="@android:color/black"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+		android:dividerHeight="2dp" 
+        android:scrollbars="none" >
+    </ListView>
+    
+</LinearLayout>
+

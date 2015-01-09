@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NearMate</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!--Old id for Near mate app   -->
+     <string name="app_id">1497902477127029</string> 
+    
+    
+    <!-- new App Id for Test mate aap -->
+    <!-- <string name="app_id">601763266617928</string> -->
+    
+    <string name="login">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="near">N E A R</string>
+    <string name="mate">M A T E</string>
+     <string name="nearmate">N E A R M A T E</string>
+    <string name="meet">Meet</string>
+    <string name="attach">Attach</string>
+    <string name="treat">Treat</string>
+    <string name="enjoy">Enjoy</string>
+    
+    <string name="location">Location</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="relationship">Relationship</string>
+    <string name="left_menu_icon">left menu icon</string>
+     <string name="icon">Icon</string>
+      <string name="profile_setting_icon">setting_icon_profile</string>
+      
+     
+     
+      
+      <string name="not_found">Not found</string>
+    
+    
+    <!-- SLIDER STRINGS -->
+     <string name="view_profile">view Profile</string>
+     <string name="discovery_pref">Discovery Preference</string>
+     <string name="discovery_pref_desc">change who you can see, or hide yourself</string>
+     <string name="app_setting">App Settings</string>
+	 <string name="app_setting_desc">Notification,account,and other settings</string>
+     <string name="contact_nearmate">Contact NearMate</string>
+     <string name="contact_nearmate_desc">We want to hear it all</string>
+     <string name="share_nearmate">Share NearMate</string>
+	 <string name="share_nearmate_desc">sharing is caring</string>
+	 <string name="matches">Matches</string>
+	 <string name="signout">SignOut</string>
+
+	 <!--Header Strings  -->
+	<string name="filter">Filter</string>
+	<string name="contact_header">Contact</string>
+     <string name="refresh">Refresh</string> 
+	
+	<!--Profile About  -->
+	<string name="about_me">About Me:</string>
+	<string name="Sample_about_me">Hello, This is the Sample text, you can write your own </string>
+	<string name="my_likes">My Likes</string>
+	
+	<!-- Profile Deatils -->
+	<string name="education">Education:</string>
+	<string name="blank_details">Not found:</string>
+	<string name="horoscope">Zodiac:</string>
+	<string name="job">Job:</string>
+	<string name="income">Income:</string>
+	<string name="language">Language:</string>
+	<string name="hobby">Hobby:</string>
+	
+	
+	<!--Education  -->
+	<string name="status">STATUS</string>
+	<string name="education_education">EDUCATION</string>
+
+	<!-- Near By search -->
+	 <string name="profile_city">City</string>
+	    <string name="profile_state">State</string>
+	    <string name="profile_country">Country</string>
+	
+	    
+	  
+   
+	
+	
+</resources>

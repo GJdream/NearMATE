@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/global_container"
+     xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/name"
+        style="@android:style/TextAppearance.Large.Inverse"
+        android:textColor="@color/test_green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+         android:background="#F1F1F1"
+        tools:text="name"
+        android:shadowColor="#F1F1F1"
+        android:shadowRadius="1.5"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:padding="10dp"/>
+
+    <View
+        android:id="@+id/divider_name"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@id/name"
+        android:background="@color/black"
+        />
+
+        
+         <com.facebook.widget.ProfilePictureView
+             android:id="@+id/image"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentRight="true"
+             android:layout_below="@id/divider_name"
+             android:background="@color/cardimagebg"
+            android:scaleType="centerCrop"
+             facebook:preset_size="large" >
+
+         </com.facebook.widget.ProfilePictureView>
+	<!--  android:scaleType="centerCrop" -->
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/image"
+        android:background="@color/black" />
+
+  <!--   <View
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignBottom="@+id/btn_user_about"
+        android:layout_below="@+id/divider_bottom"
+        android:background="#F1F1F1"
+        /> -->
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_user_chat"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/image"
+        android:layout_toLeftOf="@+id/btn_sep_1"
+        android:gravity="center_vertical|center_horizontal"
+        android:ellipsize="end"
+        android:lines="2"
+        android:background="#F1F1F1"
+        android:textColor="@color/test_green"
+        />
+
+    <View
+        android:id="@+id/btn_sep_1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/btn_user_about"
+        android:layout_below="@id/image"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/btn_user_about"
+        android:background="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/btn_user_about"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_below="@id/image"
+        android:layout_toLeftOf="@+id/btn_sep_2"
+        android:background="#F1F1F1"
+        android:padding="10dp"
+        android:src="@drawable/about1"/>
+
+    <View
+        android:id="@+id/btn_sep_2"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/btn_user_about"
+        android:layout_below="@id/image"
+        android:layout_marginTop="7dp"
+        android:layout_toLeftOf="@+id/btn_user_chat"
+        android:background="@color/black"/>
+
+    <ImageButton
+        android:id="@+id/btn_user_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/image"
+        android:background="#F1F1F1"
+        android:padding="10dp"
+        android:src="@drawable/chat"/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:src="@drawable/add_friend" />
+
+</RelativeLayout>

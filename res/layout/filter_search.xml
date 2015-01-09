@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_drawer"
+    android:orientation="vertical" >
+    
+
+    
+    <include layout="@layout/header_filter"/>
+    
+       <!--Gender View  -->
+    
+     <RelativeLayout
+         
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="10dp"
+         android:background="@android:color/white" >
+         
+         <RadioGroup
+    android:id="@+id/radioSex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+
+
+         <RadioButton
+             android:id="@+id/radioMale"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:drawableLeft="@drawable/male"
+             android:text="Male"
+             android:textColor="@android:color/black" />
+         
+         </RadioGroup>
+
+         <RadioButton
+             android:id="@+id/radioFemale"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:drawableLeft="@drawable/female"
+             android:text="Female"
+             android:textColor="@android:color/black" />
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/heart" />
+         
+     </RelativeLayout>
+	 
+
+     
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice">
+        </ListView>
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sub_heading"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:visibility="invisible"/>
+    
+    <ListView
+            android:id="@+id/lv_another"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:choiceMode="singleChoice"
+            android:visibility="invisible">
+        </ListView>
+
+   
+</LinearLayout>

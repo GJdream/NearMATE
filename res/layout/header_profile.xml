@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/test_green"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    
+    <!-- android:background="#1a237e"  -->
+    <!--android:background="@android:color/transparent"  -->
+
+    <!-- Menu Icon  -->
+    
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/icon"
+        android:layout_toRightOf="@+id/menuicon"
+        android:src="@drawable/icon" />
+     <!-- Search Icon  -->
+    
+    <!-- App Logo -->
+    
+    
+     <!-- Search Bar Layout -->
+    <RelativeLayout 
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+     	android:paddingLeft="5dp" 
+     	android:paddingRight="5dp"
+     	android:gravity="center_vertical"
+     	android:layout_centerVertical="true"
+     	android:visibility="gone"
+     	android:id="@+id/search_layout"
+     >
+     	
+    </RelativeLayout>
+	
+     <!-- Contact Us Icon  -->
+    
+    <!-- Share Icon  -->
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/menuicon"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="15sp"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/menuicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/left_menu_icon"
+        android:onClick="showSlidingMenu"
+        android:src="@drawable/menu" />
+
+    </RelativeLayout>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+    
+    <!--Education  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/education" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/textcolorblack"/>
+        <ImageView
+            android:id="@+id/edit_about_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_1"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/education"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_about_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:layout_alignLeft="@+id/tv_1"
+            android:layout_below="@+id/tv_1"
+            android:layout_marginTop="10dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+    
+    <!-- Horoscope -->
+    
+     
+        
+     
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+     
+     
+     <!-- Job -->
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/job"
+            android:textColor="@color/textcolorblack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/edit_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_3"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/job"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignLeft="@+id/tv_3"
+            android:layout_below="@+id/tv_3"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+        
+     <!-- Income/ salary range -->
+    
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/income"
+            android:textColor="@color/textcolorblack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/edit_Income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_4"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/income"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_Income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignLeft="@+id/tv_4"
+            android:layout_below="@+id/tv_4"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+        
+     
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+     
+     <!-- Horoscope -->
+     
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/horoscope" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/textcolorblack"/>
+        <ImageView
+            android:id="@+id/edit_horoscope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_2"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/horoscope"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_horoscope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignLeft="@+id/tv_2"
+            android:layout_below="@+id/tv_2"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+        
+     
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+     
+     <!-- offsprings -->
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/language"
+            android:textColor="@color/textcolorblack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/edit_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_5"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/language"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignLeft="@+id/tv_5"
+            android:layout_below="@+id/tv_5"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            />
+        </RelativeLayout>
+        
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+     
+     
+     <!--Relegion  -->
+    
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/hobby"
+            android:textColor="@color/textcolorblack"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/edit_Hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_6"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/hobby"
+            android:src="@android:drawable/ic_menu_edit" />
+        <TextView
+            android:id="@+id/tv_Hobby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_alignLeft="@+id/tv_6"
+            android:layout_below="@+id/tv_6"
+            android:layout_marginTop="10dp"
+            android:hint="@string/blank_details"
+            android:textStyle="italic"
+            android:padding="5dp"
+            />
+        </RelativeLayout>
+        
+ <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/black"/>
+    
+ </LinearLayout>
+            </ScrollView>
+ 
+</LinearLayout>
